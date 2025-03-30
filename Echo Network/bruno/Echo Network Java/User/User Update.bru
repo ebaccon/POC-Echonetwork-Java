@@ -1,0 +1,21 @@
+meta {
+  name: User Update
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:8080/user
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "firstName": "Erwan2",
+    "lastName": "Baccon",
+    "email": "ebaccon@toto.fr",
+    "age": 34
+  }
+}
