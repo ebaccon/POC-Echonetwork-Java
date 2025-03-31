@@ -10,7 +10,7 @@ import lombok.experimental.SuperBuilder;
 @Entity
 @Table(name = "user_network") // Can't naming table by "user" because reserved by PostgreSQL
 @Data
-@SuperBuilder
+@SuperBuilder(toBuilder=true)
 @NoArgsConstructor
 @AllArgsConstructor
 public class User extends BaseEntity {
